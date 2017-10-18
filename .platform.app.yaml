@@ -43,7 +43,7 @@ hooks:
       npm install
       npm run setup
       npm run compile
-      npm run gulp -- pl:full
+      npm run gulp -- serve
     # The deploy hook runs after your application has been deployed and started.
     deploy: |
       cd web
@@ -51,6 +51,8 @@ hooks:
       drush -y updatedb
       drush -y config-import
       drush -y entup
+      cd themes/patternlab
+      npm run gulp -- serve
 
 # The configuration of app when it is exposed to the web.
 web:
