@@ -43,6 +43,7 @@ hooks:
       npm install
       npm run setup
       npm run compile
+      npm run gulp -- pl:full
     # The deploy hook runs after your application has been deployed and started.
     deploy: |
       cd web
