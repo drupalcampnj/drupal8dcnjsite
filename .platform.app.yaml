@@ -38,6 +38,11 @@ build:
 
 # The hooks executed at various points in the lifecycle of the application.
 hooks:
+    build: |
+      cd web/themes/patternlab
+      npm install
+      npm run setup
+      npm run compile
     # The deploy hook runs after your application has been deployed and started.
     deploy: |
       cd web
