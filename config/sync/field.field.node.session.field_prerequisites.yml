@@ -1,0 +1,21 @@
+uuid: 22190c62-2025-4735-b48e-30bf0284b2ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prerequisites
+    - node.type.session
+  module:
+    - text
+id: node.session.field_prerequisites
+field_name: field_prerequisites
+entity_type: node
+bundle: session
+label: Prerequisites
+description: 'What prerequisites should your audience need to know in order to get the most from your talk?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

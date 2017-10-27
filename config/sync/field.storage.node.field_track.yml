@@ -1,0 +1,39 @@
+uuid: 924f6461-94c1-4906-ade4-094510ffd4d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_track
+field_name: field_track
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: sitebuilding
+      label: 'Site Building'
+    -
+      value: frontenddesign
+      label: 'Front End & Design'
+    -
+      value: development
+      label: Development
+    -
+      value: casestudies
+      label: 'Case Studies'
+    -
+      value: everyone
+      label: Everyone
+    -
+      value: bof
+      label: 'Birds of a Feather'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
