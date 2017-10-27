@@ -1,0 +1,30 @@
+uuid: 069d5ecf-9289-47bf-8f77-ee9e9cf0a825
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_audience
+field_name: field_audience
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: beginner
+      label: 'Beginner (just starting, know basic terminology, content creation)'
+    -
+      value: intermediate
+      label: 'Intermediate (install and configure modules/themes)'
+    -
+      value: advanced
+      label: 'Advanced (sysadmin, module developer)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

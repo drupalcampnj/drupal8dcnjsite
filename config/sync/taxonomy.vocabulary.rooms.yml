@@ -1,0 +1,9 @@
+uuid: 45492478-acf5-4693-83d7-732a6483b421
+langcode: en
+status: true
+dependencies: {  }
+name: Rooms
+vid: rooms
+description: 'Rooms for sessions and other events'
+hierarchy: 0
+weight: 0
