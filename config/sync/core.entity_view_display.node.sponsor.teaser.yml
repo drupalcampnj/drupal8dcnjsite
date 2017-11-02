@@ -25,4 +25,8 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_image: true
+  field_level: true
+  field_twitter: true
+  field_website: true
