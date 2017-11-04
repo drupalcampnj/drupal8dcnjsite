@@ -7,7 +7,12 @@
     },
     {
       "name": "$c-blue",
-      "value": "hsl(208, 100%, 50%)",
+      "value": "#2377ce",
+      "comment": ""
+    },
+    {
+      "name": "$c-green",
+      "value": "#38653c",
       "comment": ""
     },
     {
