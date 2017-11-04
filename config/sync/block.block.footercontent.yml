@@ -1,0 +1,25 @@
+uuid: 6e198ca7-f4f8-4411-a6dd-ec937252f2f4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:453f74ab-4e5f-45d8-a30a-554a057d6065'
+  module:
+    - block_content
+  theme:
+    - patternlab
+id: footercontent
+theme: patternlab
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:453f74ab-4e5f-45d8-a30a-554a057d6065'
+settings:
+  id: 'block_content:453f74ab-4e5f-45d8-a30a-554a057d6065'
+  label: 'Footer Content'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
