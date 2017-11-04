@@ -1,0 +1,22 @@
+uuid: 3cb92f94-066f-4aa8-8547-e0d2efb34434
+langcode: en
+status: true
+dependencies:
+  theme:
+    - patternlab
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: patternlab_local_tasks
+theme: patternlab
+region: content
+weight: -1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
