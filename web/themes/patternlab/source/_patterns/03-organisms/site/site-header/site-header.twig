@@ -1,4 +1,10 @@
-<header class="site__header site-header">
-  {% include "@molecules/branding.twig" %}
-  <h2>Site Header</h2>
+<header class="header">
+  {% block content %}
+    <h1>DrupalCampNJ 2018</h1>
+    <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Sessions</a></li>
+    <li><a href="#">Directions</a></li>
+    </ul>
+  {% endblock %}
 </header>
