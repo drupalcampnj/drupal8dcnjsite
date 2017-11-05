@@ -1,3 +1,19 @@
 .hero {
+  background: $c-gray--light;
+  min-height: 100px;
+  text-align: center;
+
+  &__content {
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+  }
+
+  &--home {
+    background: url(../images/backgrounds/hero--home.jpg);
+    background-size: cover;
+    background-position: 50% 20%;
+    height: 425px;
+  }
 
 }
