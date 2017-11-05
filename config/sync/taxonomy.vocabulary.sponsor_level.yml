@@ -4,6 +4,6 @@ status: true
 dependencies: {  }
 name: 'Sponsor Level'
 vid: sponsor_level
-description: ''
+description: 'Categories based on level of camp support'
 hierarchy: 0
 weight: 0
