@@ -1,0 +1,31 @@
+uuid: 38b8da1b-bacd-48a9-a8ad-3b2ce291f80b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:dbaa9404-eea1-48b7-9a47-f481c12877d5'
+  module:
+    - block_content
+    - system
+  theme:
+    - patternlab
+id: homepagehero
+theme: patternlab
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:dbaa9404-eea1-48b7-9a47-f481c12877d5'
+settings:
+  id: 'block_content:dbaa9404-eea1-48b7-9a47-f481c12877d5'
+  label: 'Homepage hero'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
