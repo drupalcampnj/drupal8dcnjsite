@@ -51,3 +51,7 @@ $site-padding: $spacing--s;
 .u-full-width {
   @include full-width();
 }
+
+body {
+  margin: 0;
+}
