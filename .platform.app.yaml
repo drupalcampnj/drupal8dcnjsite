@@ -107,7 +107,7 @@ web:
           # Allow access to the Pattern Lab.
           allow: true
           expires: -1m
-          passthru: 'index.html'
+          passthru: '/index.html'
           root: 'web/themes/patternlab'
 
           # Do not execute PHP scripts.
