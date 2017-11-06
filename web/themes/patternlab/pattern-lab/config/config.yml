@@ -74,6 +74,7 @@ plugins:
           - ../source/_patterns/02-molecules/branding
           - ../source/_patterns/02-molecules/caption-block
           - ../source/_patterns/02-molecules/hero
+          - ../source/_patterns/02-molecules/nav
       organisms:
         paths:
           - ../source/_patterns/03-organisms

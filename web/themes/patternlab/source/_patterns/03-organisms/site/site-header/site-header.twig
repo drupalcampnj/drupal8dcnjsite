@@ -1,10 +1,8 @@
 <header class="header">
+  <div class="content">
   {% block content %}
-    <h1>DrupalCampNJ 2018</h1>
-    <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Sessions</a></li>
-    <li><a href="#">Directions</a></li>
-    </ul>
+    {% include "@molecules/branding.twig" %}  
+    {% include "@molecules/nav.twig" %}
   {% endblock %}
+  </div>
 </header>

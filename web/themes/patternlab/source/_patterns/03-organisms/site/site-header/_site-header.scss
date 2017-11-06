@@ -1,4 +1,14 @@
 .header {
   background: $c-header--background;
   color: $c-header--text;
+  padding: $spacing--m 0;
+
+  .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-areas:
+      "branding nav";
+  }
 }

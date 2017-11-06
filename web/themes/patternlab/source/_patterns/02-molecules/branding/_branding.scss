@@ -1,11 +1,17 @@
 .branding {
+  grid-area: branding;
+
+  a {
+    @include a-link($c-navlink, $c-navlink--hover, none, none);
+  }
+
   &__logo {
-    
+
   }
   &__name {
-    
+
   }
   &__slogan {
-    
+
   }
 }

@@ -42,7 +42,6 @@ $fs--h6: $fs--s !default;
 
 h1, .h1 {
   @include h1();
-  color: $c-red;
 }
 
 h2, .h2 {

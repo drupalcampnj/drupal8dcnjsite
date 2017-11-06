@@ -2,6 +2,8 @@
   background: $c-gray--light;
   min-height: 100px;
   text-align: center;
+  color: $c-hero--text;
+  text-shadow: 2px 2px $c-hero--textshadow;
 
   &__content {
     position: relative;
