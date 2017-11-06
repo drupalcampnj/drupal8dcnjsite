@@ -8,6 +8,11 @@ $c-links--hover: $c-blue;
 $c-header-text: $c-gray;
 $c-secondary-nav-links: $c-gray--dark;
 
+$c-link: $c-blue;
+$c-link--hover: $c-gray--dark;
+
+$c-text: $c-gray--darkest;
+
 
 // HEADER
 $c-header--background: $c-green;
@@ -19,3 +24,4 @@ $c-footer--text: $c-white;
 
 // HERO
 $c-hero--text: $c-white;
+$c-hero--textshadow: $c-gray--darker;
