@@ -52,6 +52,11 @@ $site-padding: $spacing--s;
   @include full-width();
 }
 
+@mixin pagecenter() {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 body {
   margin: 0;
 }
