@@ -1,0 +1,21 @@
+.nav {
+  text-align: right;
+  background: $c-header--background;
+  grid-area: nav;
+  padding-top: 20px;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      padding: 0 $spacing--l;
+    }
+  }
+
+  a {
+    @include a-link($c-navlink, $c-navlink--hover, none, none);
+    font-weight: bold;
+  }
+}
