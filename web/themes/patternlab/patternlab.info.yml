@@ -10,6 +10,7 @@ regions:
   hero: Hero
   content: Content
   sidebar_first: Sidebar first
+  sponsors: Sponsors
   footer: Footer
 component-libraries:
   svgs:
