@@ -11,8 +11,8 @@ dependencies:
     - patternlab
 id: homepagehero
 theme: patternlab
-region: content
-weight: -5
+region: hero
+weight: -4
 provider: null
 plugin: 'block_content:dbaa9404-eea1-48b7-9a47-f481c12877d5'
 settings:
