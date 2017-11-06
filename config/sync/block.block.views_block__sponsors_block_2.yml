@@ -1,0 +1,24 @@
+uuid: 68e74dd3-391c-48b0-ab77-ddca37c34001
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sponsors
+  module:
+    - views
+  theme:
+    - patternlab
+id: views_block__sponsors_block_2
+theme: patternlab
+region: sponsors
+weight: -5
+provider: null
+plugin: 'views_block:sponsors-block_2'
+settings:
+  id: 'views_block:sponsors-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }
