@@ -83,6 +83,8 @@
 
   </main>
 
+  {{ page.sponsors }}
+
   {% if page.footer %}
     {% embed "@organisms/site-footer.twig" %}
         {% block content %}
@@ -90,5 +92,7 @@
         {% endblock %}
       {% endembed %}
   {% endif %}
+
+  {{ page.hosting }}
 
 </div>{# /.layout-container #}

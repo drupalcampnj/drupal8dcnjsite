@@ -12,6 +12,7 @@ regions:
   sidebar_first: Sidebar first
   sponsors: Sponsors
   footer: Footer
+  hosting: Hosting
 component-libraries:
   svgs:
     paths:
