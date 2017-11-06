@@ -103,6 +103,16 @@ web:
                 '^/sites/default/files/(css|js)':
                     expires: 2w
 
+        '/themes/patternlab':
+          # Allow access to the Pattern Lab.
+          allow: true
+          expires: -1m
+          passthru: 'index.html'
+          root: 'web/themes/patternlab'
+
+          # Do not execute PHP scripts.
+          scripts: false```
+
 # The configuration of scheduled execution.
 crons:
     drupal:
