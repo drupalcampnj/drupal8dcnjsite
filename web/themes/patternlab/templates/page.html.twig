@@ -93,6 +93,12 @@
       {% endembed %}
   {% endif %}
 
-  {{ page.hosting }}
+  {% if page.hosting %}
+    {% embed "@organisms/site-hosting.twig" %}
+        {% block content %}
+          {{ page.hosting }}
+        {% endblock %}
+      {% endembed %}
+  {% endif %}
 
 </div>{# /.layout-container #}

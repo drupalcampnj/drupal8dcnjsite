@@ -18,7 +18,7 @@ settings:
   id: 'block_content:ce90399a-3b83-418e-b5a1-5861f28e5838'
   label: 'Platform.sh hosting'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
