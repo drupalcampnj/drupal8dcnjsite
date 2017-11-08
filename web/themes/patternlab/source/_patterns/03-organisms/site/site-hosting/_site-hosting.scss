@@ -1,0 +1,11 @@
+.hosting {
+  background-color: $c-hosting--background;
+  text-align: center;
+  color: $c-hosting--text;
+  padding: $spacing--m $spacing--l $spacing--l $spacing--l;
+
+  .platformsh-logo {
+    display: block;
+    margin: 0 auto;
+  }
+}
