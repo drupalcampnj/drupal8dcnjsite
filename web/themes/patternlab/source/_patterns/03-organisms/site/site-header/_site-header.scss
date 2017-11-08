@@ -9,5 +9,9 @@
     grid-template-columns: 2fr 8fr;
     grid-template-areas:
       "branding nav";
+
+    h1, h2, h3 {
+      margin-top: 0;
+    }
   }
 }
