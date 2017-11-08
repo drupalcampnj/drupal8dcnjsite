@@ -83,7 +83,13 @@
 
   </main>
 
-  {{ page.sponsors }}
+  {% if page.sponsors %}
+    {% embed "@organisms/site-sponsors.twig" %}
+        {% block content %}
+          {{ page.sponsors }}
+        {% endblock %}
+      {% endembed %}
+  {% endif %}
 
   {% if page.footer %}
     {% embed "@organisms/site-footer.twig" %}

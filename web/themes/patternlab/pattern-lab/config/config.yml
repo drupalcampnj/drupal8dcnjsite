@@ -82,6 +82,7 @@ plugins:
           - ../source/_patterns/03-organisms/site/site-footer
           - ../source/_patterns/03-organisms/site/site-header
           - ../source/_patterns/03-organisms/site/site-hosting
+          - ../source/_patterns/03-organisms/site/site-sponsors
       templates:
         paths:
           - ../source/_patterns/04-templates
