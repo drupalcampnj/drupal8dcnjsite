@@ -1,0 +1,25 @@
+uuid: dac0687a-6f5e-4ebb-9b9c-b7a77ae91f76
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ce90399a-3b83-418e-b5a1-5861f28e5838'
+  module:
+    - block_content
+  theme:
+    - patternlab
+id: platform.shhosting
+theme: patternlab
+region: hosting
+weight: 0
+provider: null
+plugin: 'block_content:ce90399a-3b83-418e-b5a1-5861f28e5838'
+settings:
+  id: 'block_content:ce90399a-3b83-418e-b5a1-5861f28e5838'
+  label: 'Platform.sh hosting'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
