@@ -7,12 +7,13 @@ $fs--h6: $fs--s !default;
 
 @mixin heading() {
   font-family: $ff--heading;
-  margin: 0;
+  margin: 1.25em 0 .5em 0;
 }
 
 @mixin h1() {
   @include heading();
   font-size: $fs--h1;
+  margin-top: 0;
 }
 
 @mixin h2() {
