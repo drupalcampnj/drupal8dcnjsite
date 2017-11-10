@@ -14,3 +14,6 @@ permissions:
   - 'access site-wide contact form'
   - 'search content'
   - 'use text format restricted_html'
+  - 'view field_room'
+  - 'view field_status'
+  - 'view field_timeslot'
