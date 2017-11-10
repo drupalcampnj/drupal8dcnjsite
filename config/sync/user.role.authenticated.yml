@@ -17,3 +17,6 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
+  - 'view field_room'
+  - 'view field_status'
+  - 'view field_timeslot'
