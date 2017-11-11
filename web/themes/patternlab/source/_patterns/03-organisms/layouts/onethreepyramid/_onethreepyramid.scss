@@ -1,6 +1,9 @@
 .onethreepyramid {
   display: grid;
+  grid-gap: $spacing--l;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
   grid-template-areas:
     "secondaryfirst secondaryfirst primary primary primary primary"
     ". secondarysecond secondarysecond secondarythird secondarythird .";
