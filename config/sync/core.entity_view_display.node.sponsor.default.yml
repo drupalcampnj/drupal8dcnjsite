@@ -11,10 +11,16 @@ dependencies:
     - image.style.large
     - node.type.sponsor
   module:
+    - dcnjlayouts
+    - field_layout
     - image
     - link
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: onethreepyramid
+    settings: {  }
 id: node.sponsor.default
 targetEntityType: node
 bundle: sponsor
@@ -23,27 +29,27 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 0
     settings: {  }
     third_party_settings: {  }
-    region: content
+    region: primary
   field_image:
-    weight: 0
+    weight: 2
     label: hidden
     settings:
       image_style: large
       image_link: ''
     third_party_settings: {  }
     type: image
-    region: content
+    region: secondaryfirst
   field_level:
-    weight: 4
+    weight: 1
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
+    region: primary
   field_twitter:
     weight: 3
     label: hidden
@@ -55,9 +61,9 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-    region: content
+    region: secondarysecond
   field_website:
-    weight: 2
+    weight: 4
     label: hidden
     settings:
       trim_length: 80
@@ -67,6 +73,6 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-    region: content
+    region: secondarythird
 hidden:
   links: true

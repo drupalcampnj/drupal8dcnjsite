@@ -69,7 +69,7 @@ display:
           default_row_class: true
           type: ul
           wrapper_class: item-list
-          class: ''
+          class: sponsorslist--platinum
       row:
         type: fields
       fields:

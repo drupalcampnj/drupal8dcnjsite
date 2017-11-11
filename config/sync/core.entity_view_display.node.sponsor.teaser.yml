@@ -5,10 +5,20 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.sponsor.body
+    - field.field.node.sponsor.field_image
+    - field.field.node.sponsor.field_level
+    - field.field.node.sponsor.field_twitter
+    - field.field.node.sponsor.field_website
     - node.type.sponsor
   module:
+    - field_layout
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.sponsor.teaser
 targetEntityType: node
 bundle: sponsor

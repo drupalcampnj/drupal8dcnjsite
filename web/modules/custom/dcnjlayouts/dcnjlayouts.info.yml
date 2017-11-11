@@ -1,0 +1,7 @@
+name: Drupal Camp New Jersey Custom Layouts
+type: module
+description: Layouts for entities in the DCNJ website.
+core: 8.x
+package: Other
+dependencies:
+- field_layout
