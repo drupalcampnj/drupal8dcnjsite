@@ -1,9 +1,9 @@
 .onethreepyramid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    "primary primary primary"
-    "secondaryfirst secondarysecond secondarythird";
+    "secondaryfirst secondaryfirst primary primary primary primary"
+    ". secondarysecond secondarysecond secondarythird secondarythird .";
 
   &__primary {
     grid-area: primary;
