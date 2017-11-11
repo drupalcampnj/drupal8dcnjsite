@@ -1,3 +1,10 @@
 {
-
+"title": "",
+"list": {
+  "type": "ul"
+},
+"rows": [
+  {"row": {"content": "<h1>test</h1>"}},
+  {"row": {"content": "second"}}
+]
 }

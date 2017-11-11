@@ -1,0 +1,27 @@
+.onethreepyramid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "primary primary primary"
+    "secondaryfirst secondarysecond secondarythird";
+
+  &__primary {
+    grid-area: primary;
+  }
+
+  &__secondary {
+
+    &--first {
+      grid-area: secondaryfirst;
+    }
+
+    &--second {
+      grid-area: secondarysecond;
+    }
+
+    &--third {
+      grid-area: secondarythird;
+    }
+
+  }
+}

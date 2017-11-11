@@ -26,6 +26,7 @@
     <h3>{{ title }}</h3>
   {% endif %}
 
+  {% set listattributes = list.attributes.addClass('sponsorslist') %}
   <{{ list.type }}{{ list.attributes }}>
 
     {% for row in rows %}

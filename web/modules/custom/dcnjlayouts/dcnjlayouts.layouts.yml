@@ -1,0 +1,13 @@
+onethreepyramid:
+  label: One Three Pyramid
+  category: Custom
+  template: templates/onethreepyramid
+  regions:
+    primary:
+      label: Primary
+    secondaryfirst:
+      label: Secondary First
+    secondarysecond:
+      label: Secondary Second
+    secondarythird:
+      label: Secondary Third
