@@ -22,4 +22,5 @@
 
 .main {
   @include pagecenter();
+  padding: $spacing--l*4 0 $spacing--l*6 0;
 }

@@ -15,11 +15,10 @@ main {
 
 // All last children
 :last-child {
-  margin-bottom: 0;
+  //margin-bottom: 0;
 }
 
 // all last children with a class
 [class]:last-child {
-  margin-bottom: 0;
+  //margin-bottom: 0;
 }
-
