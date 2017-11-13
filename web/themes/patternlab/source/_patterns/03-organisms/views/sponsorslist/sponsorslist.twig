@@ -17,16 +17,13 @@
  */
 #}
 
-{% set attributes = attributes.addClass('sponsorslist') %}
-
 {% if attributes -%}
   <div{{ attributes }}>
 {% endif %}
   {% if title %}
-    <h3>{{ title }}</h3>
+    <h3 class="sponsorslist__title">{{ title }}</h3>
   {% endif %}
 
-  {% set listattributes = list.attributes.addClass('sponsorslist') %}
   <{{ list.type }}{{ list.attributes }}>
 
     {% for row in rows %}
