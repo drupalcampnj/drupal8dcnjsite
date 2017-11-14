@@ -6,16 +6,13 @@
   text-shadow: 2px 2px $c-hero--textshadow;
 
   &__content {
-    position: relative;
-    top: 50%;
-    transform: perspective(1px) translateY(-50%);
+    padding: $spacing--l*4 0;
   }
 
   &--home {
     background: url(../images/backgrounds/hero--home.jpg);
     background-size: cover;
     background-position: 50% 20%;
-    height: 425px;
   }
 
   h1, h2, h3 {
