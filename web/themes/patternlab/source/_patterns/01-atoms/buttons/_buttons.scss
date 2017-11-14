@@ -1,22 +1,22 @@
-@mixin button($alt: false) {
-  @include a-link($link: $c-white, $hover: $c-white, $deco--hover: "none");
-  background-color: $c-red;
+@mixin button($bg: $c-blue, $border: $c-blue, $text: $c-white, $text-hover: $c-white) {
+  @include a-link($link: $text, $hover: $text-hover, $deco--hover: "none");
+  background-color: $bg;
   border-radius: $spacing--s;
+  border: $spacing--s solid $border;
   font-weight: $fw--700;
   padding: ($spacing--s * 3) ($spacing--l * 3);
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  @if $alt {
-    background: $c-gray--light;
-    color: $c-red;
-  }
 }
 
 .button {
   @include button();
-  &--alt {
-    @include button($alt: true);
+  &--knockout {
+    @include button(transparent, $c-white);
+    &:hover {
+      @include button($c-white, $c-white, $c-blue, $c-blue);
+    }
   }
 }
 
