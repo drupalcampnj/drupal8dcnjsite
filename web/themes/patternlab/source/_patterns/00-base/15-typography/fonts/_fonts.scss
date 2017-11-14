@@ -35,11 +35,12 @@ $font-directory: "../fonts/" !default;
   }
 }
 
-$ff--lato: 'LatoRegular', sans-serif;
-$ff--helvetica: 'Helvetica', sans-serif;
+//$ff--lato: 'LatoRegular', sans-serif;
+//$ff--helvetica: 'Helvetica', sans-serif;
+$ff--system: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 
-$ff--heading: $ff--lato !default;
-$ff--body: $ff--helvetica !default;
+$ff--heading: $ff--system !default;
+$ff--body: $ff--system !default;
 
 // font Sizes
 $fs--xxl: 36px;

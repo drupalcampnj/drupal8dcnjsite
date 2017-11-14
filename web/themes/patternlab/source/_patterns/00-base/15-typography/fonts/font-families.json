@@ -1,13 +1,8 @@
 {
   "items": [
     {
-      "name": "$ff--lato",
-      "value": "'LatoRegular', sans-serif",
-      "comment": ""
-    },
-    {
-      "name": "$ff--helvetica",
-      "value": "'Helvetica', sans-serif",
+      "name": "$ff--system",
+      "value": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
       "comment": ""
     }
   ],
