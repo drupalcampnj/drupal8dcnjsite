@@ -1,0 +1,44 @@
+.callouts {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "primary"
+    "secondaryfirst"
+    "secondarysecond";
+
+  @include breakpoint($bp--small) {
+    grid-gap: $spacing--l * 2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "primary primary"
+      "secondaryfirst secondarysecond";
+  }
+
+  @include breakpoint($bp--large) {
+    grid-gap: $spacing--l * 2;
+    grid-template-columns: 1fr 1.66fr 1fr;
+    grid-template-areas:
+      "secondaryfirst primary secondarysecond";
+  }
+
+  &__primary{
+    grid-area: primary;
+    border-top: 4px solid $c-calloutprimary;
+  }
+
+  &__secondaryfirst{
+    grid-area: secondaryfirst;
+    border-top: 4px solid $c-calloutsecondaryfirst;
+  }
+
+  &__secondarysecond{
+    grid-area: secondarysecond;
+    border-top: 4px solid $c-calloutsecondarysecond;
+  }
+
+  h1, h2, h3 {
+    margin-top: 0;
+  }
+
+}

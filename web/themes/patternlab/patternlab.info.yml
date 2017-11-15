@@ -8,6 +8,9 @@ libraries:
 regions:
   header: Header
   hero: Hero
+  calloutprimary: Callout (Primary)
+  calloutsecondaryfirst: 'Callout (Secondary, First position)'
+  calloutsecondarysecond: 'Callout (Secondary, Second position)'
   content: Content
   sidebar_first: Sidebar first
   sponsors: Sponsors
@@ -47,6 +50,7 @@ component-libraries:
       - source/_patterns/03-organisms
       - source/_patterns/03-organisms/grids/caption-grid-block
       - source/_patterns/03-organisms/layouts/onethreepyramid
+      - source/_patterns/03-organisms/site/site-callouts
       - source/_patterns/03-organisms/site/site-footer
       - source/_patterns/03-organisms/site/site-header
       - source/_patterns/03-organisms/site/site-hosting

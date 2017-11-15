@@ -62,6 +62,20 @@
 
   {{ page.hero }}
 
+  {% if page.calloutprimary or page.calloutsecondaryfirst or page.calloutsecondarysecond %}
+    {% embed "@organisms/site-callouts.twig" %}
+      {% block calloutprimary %}
+        {{ page.calloutprimary }}
+      {% endblock %}
+      {% block calloutsecondaryfirst %}
+        {{ page.calloutsecondaryfirst }}
+      {% endblock %}
+      {% block calloutsecondarysecond %}
+        {{ page.calloutsecondarysecond }}
+      {% endblock %}
+    {% endembed %}
+  {% endif %}
+
   <main class="main" role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
