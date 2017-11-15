@@ -1,8 +1,12 @@
 .nav {
-  text-align: right;
+  text-align: center;
   background: $c-header--background;
   grid-area: nav;
   padding-top: 20px;
+
+  @include breakpoint($bp--medium) {
+    text-align: right;
+  }
 
   ul {
     list-style: none;

@@ -1,5 +1,10 @@
 .branding {
   grid-area: branding;
+  text-align: center;
+
+  @include breakpoint($bp--medium) {
+    text-align: left;
+  }
 
   a {
     @include a-link($c-navlink, $c-navlink--hover, none, none);

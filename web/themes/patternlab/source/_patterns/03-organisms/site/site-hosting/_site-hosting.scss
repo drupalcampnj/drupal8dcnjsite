@@ -8,4 +8,9 @@
     display: block;
     margin: 0 auto;
   }
+
+  a {
+    @include a-link($c-footerlink, $c-footerlink--hover, none, none);
+    font-weight: bold;
+  }
 }
