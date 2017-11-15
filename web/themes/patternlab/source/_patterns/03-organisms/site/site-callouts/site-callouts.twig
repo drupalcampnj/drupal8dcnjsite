@@ -1,0 +1,26 @@
+<div class="callouts">
+  {% if calloutprimary %}
+    <div class="callouts__primary">
+      {% block calloutprimary %}
+        <h2>Callout Primary</h2>
+        <p>{{ description }}</p>
+      {% endblock %}
+    </div>
+  {% endif %}
+  {% if calloutsecondaryfirst %}
+    <div class="callouts__secondaryfirst">
+      {% block calloutsecondaryfirst %}
+        <h2>Callout Secondary First</h2>
+        <p>{{ description }}</p>
+      {% endblock %}
+    </div>
+  {% endif %}
+  {% if calloutsecondarysecond %}
+    <div class="callouts__secondarysecond">
+      {% block calloutsecondarysecond %}
+        <h2>Callout Secondary Second</h2>
+        <p>{{ description }}</p>
+      {% endblock %}
+    </div>
+  {% endif %}
+</div>
