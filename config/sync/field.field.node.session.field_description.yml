@@ -1,0 +1,21 @@
+uuid: 52eac317-2a55-455b-ac46-31042f1549c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.session
+  module:
+    - text
+id: node.session.field_description
+field_name: field_description
+entity_type: node
+bundle: session
+label: Description
+description: 'Tell us about what your session will cover and what you hope attendees will walk away from it with. Be sure to mention the Drupal version if talking specifically about 8 or 7.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
