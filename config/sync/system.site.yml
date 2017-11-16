@@ -3,7 +3,7 @@ name: DrupalCampNJ
 mail: team@drupalcampnj.org
 slogan: ''
 page:
-  403: ''
+  403: /node/19
   404: ''
   front: /node/11
 admin_compact_mode: false
