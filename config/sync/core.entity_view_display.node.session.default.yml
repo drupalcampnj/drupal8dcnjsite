@@ -12,8 +12,6 @@ dependencies:
     - field.field.node.session.field_room
     - field.field.node.session.field_status
     - field.field.node.session.field_timeslot
-    - field.field.node.session.field_track
-    - field.field.node.session.field_version
     - node.type.session
   module:
     - field_layout
@@ -50,20 +48,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
-  field_track:
-    weight: 3
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  field_version:
-    weight: 4
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
     region: content
 hidden:
   field_additional_presenter: true
