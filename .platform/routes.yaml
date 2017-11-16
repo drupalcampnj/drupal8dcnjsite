@@ -16,3 +16,19 @@ https://{default}/:
     expires: -1s
     paths: {}
   to: https://www.{default}/
+https://www.{default}/:
+  type: upstream
+  redirects:
+    expires: -1s
+    paths: {}
+  cache:
+    enabled: true
+    default_ttl: 0
+    cookies:
+    - '*'
+    headers:
+    - Accept
+    - Accept-Language
+  ssi:
+    enabled: false
+  upstream: app:http
