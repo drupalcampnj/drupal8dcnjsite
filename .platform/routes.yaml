@@ -4,3 +4,9 @@ http://{default}/:
     expires: -1s
     paths: {}
   to: https://www.{default}/
+http://www.{default}/:
+  type: redirect
+  redirects:
+    expires: -1s
+    paths: {}
+  to: https://www.{default}/
