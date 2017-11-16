@@ -3,9 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.session.body
     - field.field.node.session.field_additional_presenter
     - field.field.node.session.field_audience
+    - field.field.node.session.field_description
     - field.field.node.session.field_files
     - field.field.node.session.field_image
     - field.field.node.session.field_prerequisites
@@ -30,19 +30,19 @@ targetEntityType: node
 bundle: session
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 0
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_audience:
     weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
+    region: content
+  field_description:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
   field_prerequisites:
     weight: 2
