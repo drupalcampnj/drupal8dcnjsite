@@ -19,7 +19,7 @@ settings:
   id: 'block_content:4dc5a374-f295-471f-b7c2-c22143cb60e9'
   label: 'Training Callout'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
