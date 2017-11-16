@@ -6,4 +6,4 @@ http://{default}/:
   redirects:
     expires: -1s
     paths: {}
-  to: https://{default}/
+  to: https://www.{default}/
