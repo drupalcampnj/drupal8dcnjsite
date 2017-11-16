@@ -12,8 +12,8 @@ field_name: field_prerequisites
 entity_type: node
 bundle: session
 label: Prerequisites
-description: 'What should your audience know before they attend in order to get the most from your talk?'
-required: false
+description: 'Tell us what attendees should have knowledge or experience with in order to benefit most from your session. If nothing specific is needed for attendees, just enter "None".'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
