@@ -1,0 +1,9 @@
+uuid: d01c358e-7403-490e-8d91-4aa3a71d57eb
+langcode: en
+status: true
+dependencies: {  }
+name: 'Who Should Attend'
+vid: who_should_attend
+description: 'The target audience for the session'
+hierarchy: 0
+weight: 0

@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.session.field_additional_presenter
-    - field.field.node.session.field_audience
     - field.field.node.session.field_description
     - field.field.node.session.field_files
     - field.field.node.session.field_image
@@ -12,6 +11,7 @@ dependencies:
     - field.field.node.session.field_room
     - field.field.node.session.field_status
     - field.field.node.session.field_timeslot
+    - field.field.node.session.field_who_should_attend
     - image.style.thumbnail
     - node.type.session
   module:
@@ -33,24 +33,18 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   field_additional_presenter:
-    weight: 8
+    weight: 9
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
-    region: content
-  field_audience:
-    weight: 9
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
     region: content
   field_description:
     weight: 1
@@ -61,14 +55,14 @@ content:
     type: text_textarea
     region: content
   field_files:
-    weight: 14
+    weight: 12
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
   field_image:
-    weight: 13
+    weight: 11
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -84,7 +78,7 @@ content:
     type: text_textarea
     region: content
   field_room:
-    weight: 17
+    weight: 15
     settings:
       match_operator: CONTAINS
       size: 60
@@ -93,20 +87,26 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_status:
-    weight: 15
+    weight: 13
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_timeslot:
-    weight: 16
+    weight: 14
     settings: {  }
     third_party_settings: {  }
     type: daterange_default
     region: content
+  field_who_should_attend:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   path:
     type: path
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -114,21 +114,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 5
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 6
     third_party_settings: {  }
     region: content
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 7
     region: content
     third_party_settings: {  }
   title:
@@ -141,7 +141,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60
