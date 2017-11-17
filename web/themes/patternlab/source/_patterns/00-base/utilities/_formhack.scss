@@ -293,3 +293,10 @@ input[type="reset"]:focus {
 	background-color: $fh-button-hover-bg-color;
 	color: $fh-button-hover-font-color;
 }
+
+.js-form-type-checkbox {
+	label {
+		display: inline-block;
+		padding-top: 0;
+	}
+}
