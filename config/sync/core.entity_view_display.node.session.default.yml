@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.session.field_additional_presenter
-    - field.field.node.session.field_audience
     - field.field.node.session.field_description
     - field.field.node.session.field_files
     - field.field.node.session.field_image
@@ -12,11 +11,11 @@ dependencies:
     - field.field.node.session.field_room
     - field.field.node.session.field_status
     - field.field.node.session.field_timeslot
+    - field.field.node.session.field_who_should_attend
     - node.type.session
   module:
     - field_layout
     - layout_discovery
-    - options
     - text
     - user
 third_party_settings:
@@ -28,13 +27,6 @@ targetEntityType: node
 bundle: session
 mode: default
 content:
-  field_audience:
-    weight: 1
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
   field_description:
     weight: 5
     label: above
@@ -48,6 +40,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_who_should_attend:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
 hidden:
   field_additional_presenter: true

@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.session.field_additional_presenter
-    - field.field.node.session.field_audience
     - field.field.node.session.field_description
     - field.field.node.session.field_files
     - field.field.node.session.field_image
@@ -32,7 +31,6 @@ content:
     region: content
 hidden:
   field_additional_presenter: true
-  field_audience: true
   field_description: true
   field_files: true
   field_image: true
