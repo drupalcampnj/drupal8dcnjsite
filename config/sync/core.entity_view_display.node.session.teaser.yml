@@ -38,3 +38,4 @@ hidden:
   field_room: true
   field_status: true
   field_timeslot: true
+  field_who_should_attend: true

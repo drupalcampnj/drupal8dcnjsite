@@ -13,6 +13,8 @@ permissions:
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'create session content'
+  - 'edit own session content'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
@@ -20,3 +22,4 @@ permissions:
   - 'view field_room'
   - 'view field_status'
   - 'view field_timeslot'
+  - 'view own unpublished content'

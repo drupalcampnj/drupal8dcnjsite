@@ -28,7 +28,7 @@ bundle: session
 mode: default
 content:
   field_description:
-    weight: 5
+    weight: 0
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -42,7 +42,7 @@ content:
     type: text_default
     region: content
   field_who_should_attend:
-    weight: 6
+    weight: 1
     label: above
     settings:
       link: true

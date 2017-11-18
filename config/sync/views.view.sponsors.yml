@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_image
     - field.storage.node.field_level
+    - image.style.medium
     - node.type.sponsor
     - taxonomy.vocabulary.sponsor_level
   content:
@@ -129,7 +130,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
+            image_style: medium
             image_link: content
           group_column: ''
           group_columns: {  }
