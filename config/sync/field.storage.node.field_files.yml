@@ -5,6 +5,9 @@ dependencies:
   module:
     - file
     - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
 id: node.field_files
 field_name: field_files
 entity_type: node
