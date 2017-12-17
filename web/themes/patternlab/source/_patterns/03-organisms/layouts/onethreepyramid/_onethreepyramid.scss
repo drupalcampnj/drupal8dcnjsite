@@ -1,12 +1,21 @@
 .onethreepyramid {
   display: grid;
   grid-gap: $spacing--l*4;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "secondaryfirst secondaryfirst primary primary primary primary"
-    ". secondarysecond secondarysecond secondarythird secondarythird .";
+    "secondaryfirst"
+    "primary"
+    "secondarysecond"
+    "secondarythird";
+
+  @include breakpoint($bp--medium) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "secondaryfirst secondaryfirst primary primary primary primary"
+      ". secondarysecond secondarysecond secondarythird secondarythird .";
+  }
 
   &__primary {
     grid-area: primary;
