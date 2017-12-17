@@ -9,7 +9,7 @@ _core:
 id: patternlab_local_actions
 theme: patternlab
 region: content
-weight: -3
+weight: -8
 provider: null
 plugin: local_actions_block
 settings:

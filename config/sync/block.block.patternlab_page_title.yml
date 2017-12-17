@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - ctools
     - system
   theme:
     - patternlab
@@ -11,7 +12,7 @@ _core:
 id: patternlab_page_title
 theme: patternlab
 region: content
-weight: -2
+weight: -7
 provider: null
 plugin: page_title_block
 settings:
@@ -25,3 +26,10 @@ visibility:
     pages: '<front>'
     negate: true
     context_mapping: {  }
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      sponsor: sponsor
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'

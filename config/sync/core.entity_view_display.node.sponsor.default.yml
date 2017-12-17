@@ -34,7 +34,7 @@ content:
     third_party_settings: {  }
     region: primary
   field_image:
-    weight: 1
+    weight: 3
     label: hidden
     settings:
       image_style: large
@@ -53,9 +53,9 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-    region: secondarysecond
+    region: primary
   field_website:
-    weight: 3
+    weight: 1
     label: hidden
     settings:
       trim_length: 80
@@ -65,7 +65,7 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-    region: secondarythird
+    region: primary
 hidden:
   field_level: true
   links: true
