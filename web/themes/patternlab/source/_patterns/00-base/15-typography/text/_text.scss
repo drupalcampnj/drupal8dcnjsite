@@ -26,10 +26,12 @@ html {
 body {
   font-family: $ff--body;
   color: $c-text;
+  font-size: $fs--xl;
 }
 
-p, ol, ul {
+p, ol, ul, span, dl, blockquote {
   margin: 0 0 1.5em 0;
+  line-height: 1.3em;
 }
 
 a {
