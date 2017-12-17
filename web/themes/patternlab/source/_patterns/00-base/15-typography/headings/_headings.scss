@@ -19,6 +19,7 @@ $fs--h6: $fs--s !default;
 @mixin h2() {
   @include heading();
   font-size: $fs--h2;
+  margin-top: .75em;
 }
 
 @mixin h3() {
