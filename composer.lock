@@ -1725,7 +1725,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/sandbox/pwolanin/1388770",
-                "reference": "dd561ba48ca4667b6447d7110b06866c36215c86"
+                "reference": "ed5e8d9e78d47edfab0d29cb33fb8b9b4a277523"
             },
             "type": "drupal-module",
             "license": [
@@ -1740,7 +1740,7 @@
                 "issues": "https://www.drupal.org/project/issues/eventbrite_attendees",
                 "source": "http://cgit.drupalcode.org/eventbrite_attendees"
             },
-            "time": "2017-12-31T02:03:26+00:00"
+            "time": "2018-01-01T23:07:41+00:00"
         },
         {
             "name": "drupal/field_permissions",
