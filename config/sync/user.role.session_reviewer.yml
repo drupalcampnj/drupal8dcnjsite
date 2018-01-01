@@ -1,0 +1,10 @@
+uuid: 33952c8a-7050-4c19-a267-b1b0bc841b17
+langcode: en
+status: true
+dependencies: {  }
+id: session_reviewer
+label: 'Session Reviewer'
+weight: -6
+is_admin: null
+permissions:
+  - 'bypass node access'

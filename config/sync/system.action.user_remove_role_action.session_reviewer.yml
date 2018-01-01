@@ -1,0 +1,14 @@
+uuid: 2abee9a3-72e8-4523-87bc-f3d7b2f2f091
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.session_reviewer
+  module:
+    - user
+id: user_remove_role_action.session_reviewer
+label: 'Remove the Session Reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: session_reviewer
