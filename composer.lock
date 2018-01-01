@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab8543930012d2338bbfa0bbd8eec31b",
+    "content-hash": "c68da2dd55fbed2c10b612e071a47f6f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1718,6 +1718,29 @@
                 "source": "http://cgit.drupalcode.org/ctools",
                 "issues": "https://www.drupal.org/project/issues/ctools"
             }
+        },
+        {
+            "name": "drupal/eventbrite_attendees",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/sandbox/pwolanin/1388770",
+                "reference": "dd561ba48ca4667b6447d7110b06866c36215c86"
+            },
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "List event attendees and optionally create site accoutns for them",
+            "homepage": "https://www.drupal.org/project/eventbrite_attendees",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "https://www.drupal.org/project/issues/eventbrite_attendees",
+                "source": "http://cgit.drupalcode.org/eventbrite_attendees"
+            },
+            "time": "2017-12-31T02:03:26+00:00"
         },
         {
             "name": "drupal/field_permissions",
@@ -6447,7 +6470,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/field_permissions": 10
+        "drupal/field_permissions": 10,
+        "drupal/eventbrite_attendees": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
