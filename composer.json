@@ -13,6 +13,10 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+          "type": "vcs",
+          "url": "https://git.drupal.org/sandbox/pwolanin/1388770"
         }
     ],
     "require": {
@@ -26,7 +30,8 @@
         "drupal/pathauto": "^1.0",
         "drupal/components": "^1.0",
         "drupal/twig_field_value": "^1.1",
-        "drupal/honeypot": "^1.27"
+        "drupal/honeypot": "^1.27",
+        "drupal/eventbrite_attendees": "dev-8.x-1.x"
     },
     "require-dev": {
         "behat/mink": "~1.7",
