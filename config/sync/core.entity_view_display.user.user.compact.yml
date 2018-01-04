@@ -4,11 +4,11 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_full_name
+    - field.field.user.user.field_organization
     - field.field.user.user.user_picture
-    - image.style.thumbnail
   module:
     - field_layout
-    - image
     - layout_discovery
     - user
 third_party_settings:
@@ -22,14 +22,15 @@ targetEntityType: user
 bundle: user
 mode: compact
 content:
-  user_picture:
-    type: image
+  field_full_name:
+    type: string
     weight: 0
     region: content
-    settings:
-      image_style: thumbnail
-      image_link: content
-    third_party_settings: {  }
     label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden:
+  field_organization: true
   member_for: true
+  user_picture: true

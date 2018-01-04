@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.session.field_room
     - field.field.node.session.field_status
     - field.field.node.session.field_timeslot
+    - field.field.node.session.field_who_should_attend
     - node.type.session
   module:
     - field_layout
@@ -25,10 +26,7 @@ id: node.session.teaser
 targetEntityType: node
 bundle: session
 mode: teaser
-content:
-  links:
-    weight: 100
-    region: content
+content: {  }
 hidden:
   field_additional_presenter: true
   field_description: true
@@ -39,3 +37,4 @@ hidden:
   field_status: true
   field_timeslot: true
   field_who_should_attend: true
+  links: true
