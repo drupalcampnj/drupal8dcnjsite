@@ -15,6 +15,7 @@ dependencies:
     - image.style.thumbnail
     - node.type.session
   module:
+    - datetime_range
     - field_layout
     - file
     - image
@@ -69,12 +70,40 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
+  field_room:
+    type: entity_reference_autocomplete
+    weight: 10
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_status:
+    type: options_select
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_timeslot:
+    type: daterange_default
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_who_should_attend:
     weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
+  status:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0
@@ -85,11 +114,7 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  field_room: true
-  field_status: true
-  field_timeslot: true
   path: true
   promote: true
-  status: true
   sticky: true
   uid: true
