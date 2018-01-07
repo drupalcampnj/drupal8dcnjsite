@@ -53,7 +53,6 @@ plugins:
       base:
         paths:
           - ../source/_patterns/00-base
-          - ../source/_patterns/00-base/00-breakpoints
           - ../source/_patterns/00-base/05-colors
           - ../source/_patterns/00-base/10-spacing
           - ../source/_patterns/00-base/15-typography/fonts
@@ -61,7 +60,9 @@ plugins:
           - ../source/_patterns/00-base/15-typography/lists
           - ../source/_patterns/00-base/15-typography/text
           - ../source/_patterns/00-base/animations/01-transitions
+          - ../source/_patterns/00-base/breakpoints
           - ../source/_patterns/00-base/grids
+          - ../source/_patterns/00-base/table
           - ../source/_patterns/00-base/utilities/borders
       atoms:
         paths:

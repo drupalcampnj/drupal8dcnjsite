@@ -1,0 +1,37 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  caption {
+    font-weight: bold;
+    padding: $spacing--l $spacing--m;
+  }
+
+  thead {
+    display: none;
+
+    @include breakpoint($bp--medium) {
+      text-align: left;
+      display: table-header-group;
+    }
+  }
+
+  th {
+    padding: $spacing--m;
+  }
+
+  td {
+    display: block;
+    padding: $spacing--m;
+
+    @include breakpoint($bp--medium) {
+      display: table-cell;
+    }
+  }
+
+  tbody {
+    tr:nth-child(even) {
+      background: $c-tr--even;
+    }
+  }
+}
