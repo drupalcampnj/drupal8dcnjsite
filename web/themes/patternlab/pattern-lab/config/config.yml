@@ -62,6 +62,7 @@ plugins:
           - ../source/_patterns/00-base/animations/01-transitions
           - ../source/_patterns/00-base/breakpoints
           - ../source/_patterns/00-base/grids
+          - ../source/_patterns/00-base/table
           - ../source/_patterns/00-base/utilities/borders
       atoms:
         paths:
