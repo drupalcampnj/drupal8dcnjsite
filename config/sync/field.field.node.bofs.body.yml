@@ -1,0 +1,22 @@
+uuid: 3a29b94d-28a1-4e03-829b-8a51ee6b50e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.bofs
+  module:
+    - text
+id: node.bofs.body
+field_name: body
+entity_type: node
+bundle: bofs
+label: Description
+description: 'Describe your BOF so that attendees will be able to decide if they want to come!'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,53 @@
+uuid: da0496d3-fddc-4126-b020-bcb0e7bd7dac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.bofs.body
+    - field.field.node.bofs.field_preferred_time
+    - field.field.node.bofs.field_timeslot
+    - node.type.bofs
+  module:
+    - datetime_range
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.bofs.default
+targetEntityType: node
+bundle: bofs
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_preferred_time:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_timeslot:
+    weight: 103
+    label: above
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

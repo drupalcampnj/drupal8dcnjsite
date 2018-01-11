@@ -1,25 +1,25 @@
-uuid: 4d983d33-3f14-4bf1-be63-6111fff5c57d
+uuid: 5c2a15f5-d050-4d7a-9c52-5ff1980604d1
 langcode: en
 status: true
 dependencies:
   module:
     - field_permissions
     - node
-    - text
 third_party_settings:
   field_permissions:
     permission_type: public
-_core:
-  default_config_hash: EBUo7qOWqaiZaQ_RC9sLY5IoDKphS34v77VIHSACmVY
-id: node.body
-field_name: body
+id: node.field_preferred_time
+field_name: field_preferred_time
 entity_type: node
-type: text_with_summary
-settings: {  }
-module: text
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true
 indexes: {  }
-persist_with_no_fields: true
+persist_with_no_fields: false
 custom_storage: false
