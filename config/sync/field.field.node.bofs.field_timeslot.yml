@@ -1,0 +1,21 @@
+uuid: aaba9da3-76a4-407d-8c30-8f6e60659c0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_timeslot
+    - node.type.bofs
+  module:
+    - datetime_range
+id: node.bofs.field_timeslot
+field_name: field_timeslot
+entity_type: node
+bundle: bofs
+label: Timeslot
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

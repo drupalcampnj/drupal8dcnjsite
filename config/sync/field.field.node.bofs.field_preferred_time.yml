@@ -1,0 +1,19 @@
+uuid: 13633531-c717-4287-8081-b7c868d0fc84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_preferred_time
+    - node.type.bofs
+id: node.bofs.field_preferred_time
+field_name: field_preferred_time
+entity_type: node
+bundle: bofs
+label: 'Preferred Time'
+description: 'Early morning? Late afternoon? Anytime? Let us know! (We''ll do our best.)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
