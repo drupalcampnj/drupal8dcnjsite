@@ -31,7 +31,8 @@
         "drupal/components": "^1.0",
         "drupal/twig_field_value": "^1.1",
         "drupal/honeypot": "^1.27",
-        "drupal/eventbrite_attendees": "dev-8.x-1.x"
+        "drupal/eventbrite_attendees": "dev-8.x-1.x",
+        "drupal/google_analytics": "^2.2"
     },
     "require-dev": {
         "behat/mink": "~1.7",
