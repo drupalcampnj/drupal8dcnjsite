@@ -31,4 +31,6 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_preferred_time: true
+  field_timeslot: true
