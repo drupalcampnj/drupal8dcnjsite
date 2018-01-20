@@ -1,0 +1,8 @@
+uuid: 3ee91414-b8a2-46b6-895f-cb14eda9dc49
+langcode: en
+status: true
+dependencies: {  }
+id: hour_and_minute
+label: 'Hour and minute'
+locked: false
+pattern: 'g:i a'
