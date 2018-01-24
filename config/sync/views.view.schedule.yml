@@ -46,8 +46,8 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
-          reset_button: false
+          submit_button: Filter
+          reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
@@ -278,8 +278,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<small>{{ field_who_should_attend }}</small>'
             make_link: false
             path: ''
             absolute: false
@@ -328,7 +328,7 @@ display:
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: '&nbsp;| '
           field_api_classes: false
           plugin_id: field
       filters:
@@ -385,21 +385,18 @@ display:
           entity_field: type
           plugin_id: bundle
       sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
+        field_timeslot_value:
+          id: field_timeslot_value
+          table: node__field_timeslot
+          field: field_timeslot_value
           relationship: none
           group_type: group
           admin_label: ''
+          order: ASC
           exposed: false
           expose:
             label: ''
-          granularity: second
+          plugin_id: standard
       title: Schedule
       header: {  }
       footer: {  }
@@ -408,6 +405,24 @@ display:
       arguments: {  }
       display_extenders: {  }
       css_class: schedule
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_additional_presenter'
+        - 'config:field.storage.node.field_timeslot'
+        - 'config:field.storage.node.field_who_should_attend'
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Block
+    position: 2
+    display_options:
+      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -431,7 +446,7 @@ display:
         type: normal
         title: Schedule
         menu_name: main
-        enabled: false
+        enabled: true
     cache_metadata:
       max-age: -1
       contexts:
