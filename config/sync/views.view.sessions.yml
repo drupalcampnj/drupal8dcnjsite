@@ -346,6 +346,7 @@ display:
         title: 'Accepted Sessions'
         menu_name: main
         weight: -48
+        enabled: false
     cache_metadata:
       max-age: -1
       contexts:

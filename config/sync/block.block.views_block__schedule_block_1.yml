@@ -1,22 +1,22 @@
-uuid: ff17ad94-9292-40c2-a16e-865ccd77934a
+uuid: 50c887bd-3adc-487f-916a-14492dae6094
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.sessions
+    - views.view.schedule
   module:
     - system
     - views
   theme:
     - patternlab
-id: views_block__sessions_block_1
+id: views_block__schedule_block_1
 theme: patternlab
 region: content
 weight: 0
 provider: null
-plugin: 'views_block:sessions-block_1'
+plugin: 'views_block:schedule-block_1'
 settings:
-  id: 'views_block:sessions-block_1'
+  id: 'views_block:schedule-block_1'
   label: ''
   provider: views
   label_display: visible
@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/program/camp\r\n/saturday-camp-tickets"
+    pages: "/saturday-camp-tickets\r\n/program/camp"
     negate: false
     context_mapping: {  }
