@@ -19,7 +19,7 @@
     @supports (display:grid) {
       display: grid;
     }
-    grid-gap: $spacing--l;
+    grid-gap: $spacing--l + $spacing--s;
     grid-template-columns: 1fr;
 
     @include breakpoint($bp--medium) {
@@ -29,6 +29,24 @@
     @include breakpoint($bp--xlarge) {
       grid-template-columns: 1fr 1fr 1fr;
     }
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__contenttype {
+    margin-bottom: 0;
+    font-size: 70%;
+    color: $c-schedule__contenttypetext;
+    background: $c-schedule__contenttypebackground;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2px 6px;
+  }
+
+  &__whoshouldattend {
+    font-size: 80%;
   }
 
 }
