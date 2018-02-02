@@ -604,6 +604,7 @@ display:
         title: Schedule
         menu_name: main
         enabled: true
+        weight: -46
     cache_metadata:
       max-age: -1
       contexts:
