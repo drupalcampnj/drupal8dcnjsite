@@ -1,0 +1,141 @@
+uuid: 531c081a-a1b2-4666-a175-5bd7f651cc89
+langcode: en
+status: open
+dependencies:
+  module:
+    - honeypot
+third_party_settings:
+  honeypot:
+    honeypot: true
+open: null
+close: null
+uid: 4
+template: false
+id: training_day_survey_2018
+title: 'Training Day Survey 2018'
+description: ''
+category: DCNJ2018
+elements: "which_training_did_you_attend_:\n  '#type': select\n  '#title': 'Which training did you attend?'\n  '#options':\n    'Object Oriented PHP': 'Object Oriented PHP'\n    'Actionable Strategies to Improve Customer Experience': 'Actionable Strategies to Improve Customer Experience'\n    'Hand-on  Introduction to Drupal 8': 'Hand-on  Introduction to Drupal 8'\n    'Introduction to User Experience Design': 'Introduction to User Experience Design'\n    'SEO Your Drupal 8 Site in a Day': 'SEO Your Drupal 8 Site in a Day'\n  '#required': true\noverall_how_would_you_rate_the_training_:\n  '#type': select\n  '#title': 'Overall, how would you rate the training?'\n  '#options':\n    Excellent: Excellent\n    'Very good': 'Very good'\n    'Fairly good': 'Fairly good'\n    'Needs improvement': 'Needs improvement'\n    'Not good at all': 'Not good at all'\n  '#required': true\nwhat_did_you_like_most_about_the_training_:\n  '#type': textarea\n  '#title': 'What did you like most about the training?'\nwhat_if_anything_needed_improvement_:\n  '#type': textarea\n  '#title': 'What, if anything, needed improvement?'\nprior_to_the_training_did_you_get_all_of_the_information_you_nee:\n  '#type': select\n  '#title': 'Prior to the training, did you get all of the information you needed?'\n  '#options': yes_no\n  '#required': true\nif_no_what_information_was_missing_:\n  '#type': textarea\n  '#title': 'If no, what information was missing?'\n  '#states':\n    visible:\n      ':input[name=\"prior_to_the_training_did_you_get_all_of_the_information_you_nee\"]':\n        value: 'No'\nhow_likely_is_it_that_you_would_recommend_this_training_to_a_fri:\n  '#type': number\n  '#title': 'How likely is it that you would recommend this training to a friend or colleague?'\n  '#description': '0 = Not at all likely ... 10 = Very likely&nbsp;'\n  '#min': '0'\n  '#max': '10'\n  '#required': true\nis_there_anything_else_you_d_like_to_share_about_the_training_ev:\n  '#type': textarea\n  '#title': 'Is there anything else you’d like to share about the training event?'\nyour_email_in_case_we_want_more_information_about_your_answers_o:\n  '#type': email\n  '#title': 'Your email in case we want more information about your answers (optional)'\n"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_login: false
+  form_login_message: ''
+  submission_label: ''
+  submission_log: false
+  submission_user_columns: {  }
+  submission_login: false
+  submission_login_message: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_start_label: ''
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: inline
+  confirmation_title: ''
+  confirmation_message: 'Thank you for submitting feedback - your input helps us improve these events for&nbsp;Drupal community!'
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
