@@ -2,7 +2,7 @@
   text-align: center;
   background: $c-header--background;
   grid-area: nav;
-  padding-top: 20px;
+  align-self: center;
 
   @include breakpoint($bp--medium) {
     text-align: right;
@@ -14,7 +14,7 @@
     padding: 0;
     li {
       display: inline-block;
-      padding: 0 $spacing--l;
+      padding: $spacing--m;
     }
   }
 
