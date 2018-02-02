@@ -1,6 +1,9 @@
 .branding {
-  grid-area: branding;
   text-align: center;
+
+  h2 {
+    margin: 0;
+  }
 
   @include breakpoint($bp--medium) {
     text-align: left;
@@ -19,4 +22,9 @@
   &__slogan {
 
   }
+}
+
+#block-patternlab-branding {
+  grid-area: branding;
+  align-self: center;
 }
