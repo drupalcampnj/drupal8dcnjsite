@@ -1,0 +1,85 @@
+name: dcnj
+recipe: drupal8
+config:
+  webroot: web
+
+events:
+  # Clear caches after a database import
+  post-db-import:
+    - appserver: cd $LANDO_WEBROOT && drush cr -y
+  # Runs composer install after app starts
+  post-start:
+    - appserver: cd $LANDO_MOUNT && composer install
+  post-siteinstall:
+    - appserver: cd $LANDO_MOUNT && drupal site:install minimal --langcode="en" --db-prefix="" --db-type="mysql" --db-host="database" --db-name="drupal8" --db-user="drupal8" --db-pass="drupal8" --db-port="3306" --site-name="Drupal 8" --site-mail="admin@example.com" --account-name="admin" --account-mail="admin@example.com" --account-pass="p455w0rd" && drupal cache:rebuild
+    - appserver: chmod 666 $LANDO_MOUNT/web/sites/default/settings.php
+    - appserver: cd $LANDO_WEBROOT && drush site-install --verbose config_installer config_installer_sync_configure_form.sync_directory=../config/sync --yes && drush cr
+  post-sitesync:
+    - appserver: cd $LANDO_MOUNT && composer install && cd web && drush -y cache-rebuild && drush -y updatedb && drush -y config-import && drush -y entup
+
+# URL to phpmyadmin
+proxy:
+  pma:
+    - pma.xiah.lndo.site
+  mailhog:
+    - mail.xiah.lndo.site
+
+services:
+
+  # Override the appsever to add some environment variables and install an extra VIM package
+  appserver:
+    run_as_root:
+      - apt-get update -y
+      - apt-get install vim -y
+    overrides:
+      services:
+        environment:
+          MYCONFIGVAR1: secretpasscode
+
+  # Add in another database to help with phpmyadmin
+  database2:
+    type: mariadb
+
+  # Spin up a mailhog container called "mailhog"
+  # NOTE: "mailhog" is arbitrary, you could just as well call this "blackhole" or "weezer"
+  mailhog:
+    # Use the latest mailhog version
+    type: mailhog
+    # List of services that we want to capture mail from
+    # You can run `lando info` to get a list of services that are available
+    # Mailhog expects that these services will be php services
+    hogfrom:
+      - appserver
+    # Optionally allow access to the smtp service at localhost:1026
+    # You will need to make sure port 1026 is open on your machine
+    #
+    # You can also set `portforward: true` to have Lando dynamically assign
+    # an open port. Unlike specifying an actual port setting this to true will give you
+    # a different port every time you restart your app
+    portforward: 1026
+
+  # Add a phpmyadmin db frontend
+  pma:
+    # Use the latest version of phpmyadmin
+    type: phpmyadmin
+    # The databases you want to look at, this will default to a service called
+    # "database"
+    #
+    # You might want to run `lando info` on your app to see what databases you
+    # have available
+    hosts:
+      - database
+      - database2
+
+# Add a lando vim command
+tooling:
+  siteinstall:
+    description: Install site from configuration
+    cmd: true
+    service: appserver
+  sitesync:
+    description: Sync latest configuration into the site. (Do a git pull first)
+    cmd: true
+    service: appserver
+  vim:
+    service: appserver
