@@ -1,10 +1,15 @@
+uuid: 531c081a-a1b2-4666-a175-5bd7f651cc89
 langcode: en
 status: open
 dependencies:
   module:
     - honeypot
+third_party_settings:
+  honeypot:
+    honeypot: true
 open: null
 close: null
+weight: 0
 uid: 4
 template: false
 archive: false
@@ -147,7 +152,3 @@ access:
     users: {  }
     permissions: {  }
 handlers: {  }
-uuid: 531c081a-a1b2-4666-a175-5bd7f651cc89
-third_party_settings:
-  honeypot:
-    honeypot: true

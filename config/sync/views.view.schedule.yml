@@ -525,7 +525,8 @@ display:
           exposed: false
           expose:
             label: ''
-          plugin_id: standard
+          plugin_id: datetime
+          entity_type: node
         field_room_target_id:
           id: field_room_target_id
           table: node__field_room
