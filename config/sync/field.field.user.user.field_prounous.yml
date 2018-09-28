@@ -1,0 +1,20 @@
+uuid: d20faa4b-d93b-47d9-9fd0-9c63568ee03a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_prounous
+  module:
+    - user
+id: user.user.field_prounous
+field_name: field_prounous
+entity_type: user
+bundle: user
+label: Prounous
+description: 'The pronouns you would like people to use when referring to you, e.g. “they/them.”'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

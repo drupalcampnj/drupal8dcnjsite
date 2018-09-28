@@ -19,4 +19,5 @@ web/sites/*/files
 web/sites/*/settings.local.php
 
 # Ignore data synced to local environment
-*--dump.sql
+*.sql
+*.gz

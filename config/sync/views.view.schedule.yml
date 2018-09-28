@@ -550,7 +550,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<strong>The camp on Saturday, February 3 will be held in the <a href="http://m.princeton.edu/map/campus?feed=91eda3cbe8&group=princeton&featureindex=0616&category=91eda3cbe8%3AALL&_b=%5B%7B%22t%22%3A%22Map%22%2C%22lt%22%3A%22Map%22%2C%22p%22%3A%22index%22%2C%22a%22%3A%22%22%7D%5D" target="_blank">Friend Center</a> at Princeton University.<strong>'
+            value: '<strong>The 2018 camp was held on Saturday, February 3 in the <a href="http://m.princeton.edu/map/campus?feed=91eda3cbe8&group=princeton&featureindex=0616&category=91eda3cbe8%3AALL&_b=%5B%7B%22t%22%3A%22Map%22%2C%22lt%22%3A%22Map%22%2C%22p%22%3A%22index%22%2C%22a%22%3A%22%22%7D%5D" target="_blank">Friend Center</a> at Princeton University.<strong>'
             format: full_html
           plugin_id: text
       footer: {  }
@@ -603,7 +603,7 @@ display:
         type: normal
         title: Schedule
         menu_name: main
-        enabled: true
+        enabled: false
         weight: -46
     cache_metadata:
       max-age: -1

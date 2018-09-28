@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.session.field_image
     - field.field.node.session.field_prerequisites
     - field.field.node.session.field_room
+    - field.field.node.session.field_speaker_s_
     - field.field.node.session.field_status
     - field.field.node.session.field_timeslot
     - field.field.node.session.field_who_should_attend
@@ -51,7 +52,8 @@ content:
     weight: 5
     region: content
     label: hidden
-    settings: {  }
+    settings:
+      use_description_as_link_text: true
     third_party_settings: {  }
   field_image:
     type: image
@@ -79,6 +81,7 @@ content:
     region: content
 hidden:
   field_room: true
+  field_speaker_s_: true
   field_status: true
   field_timeslot: true
   links: true

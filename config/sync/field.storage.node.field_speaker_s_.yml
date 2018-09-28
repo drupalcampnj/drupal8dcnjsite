@@ -1,0 +1,97 @@
+uuid: c9261d94-ff10-443b-8a80-061b55944f8a
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: private
+id: node.field_speaker_s_
+field_name: field_speaker_s_
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Woman
+      label: Woman
+    -
+      value: Lesbian
+      label: Lesbian
+    -
+      value: Gay
+      label: Gay
+    -
+      value: Bisexual
+      label: Bisexual
+    -
+      value: 'Trans(*)'
+      label: 'Trans(*)'
+    -
+      value: Queer
+      label: Queer
+    -
+      value: Intersex
+      label: Intersex
+    -
+      value: 'Gender non-binary or non-conforming'
+      label: 'Gender non-binary or non-conforming'
+    -
+      value: 'Person of color'
+      label: 'Person of color'
+    -
+      value: 'Black or African American'
+      label: 'Black or African American'
+    -
+      value: 'Native American, Indigenous, or First Nations'
+      label: 'Native American, Indigenous, or First Nations'
+    -
+      value: 'Latina, Lantino, or Latinx'
+      label: 'Latina, Lantino, or Latinx'
+    -
+      value: 'Arab, Middle Eastern, or Arab American'
+      label: 'Arab, Middle Eastern, or Arab American'
+    -
+      value: 'Asian, Pacific Islander, or Asian American'
+      label: 'Asian, Pacific Islander, or Asian American'
+    -
+      value: 'Desi or Desi American'
+      label: 'Desi or Desi American'
+    -
+      value: Undocumented
+      label: Undocumented
+    -
+      value: Veteran
+      label: Veteran
+    -
+      value: 'Person living with a disability'
+      label: 'Person living with a disability'
+    -
+      value: 'Deaf or hard of hearing'
+      label: 'Deaf or hard of hearing'
+    -
+      value: 'Blind or visually impaired'
+      label: 'Blind or visually impaired'
+    -
+      value: Neurodivergent
+      label: Neurodivergent
+    -
+      value: 'Economically disadvantaged'
+      label: 'Economically disadvantaged'
+    -
+      value: 'Other sexual minority'
+      label: 'Other sexual minority'
+    -
+      value: Other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
