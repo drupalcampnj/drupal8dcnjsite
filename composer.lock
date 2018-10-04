@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "baa1750f50aaa3894eae41e2a6e69660",
+    "content-hash": "6afb6511bcc1b833ecda73a4c8a664b1",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2232,6 +2232,53 @@
             "homepage": "https://www.drupal.org/project/pathauto",
             "support": {
                 "source": "http://cgit.drupalcode.org/pathauto"
+            }
+        },
+        {
+            "name": "drupal/themable_forms",
+            "version": "1.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/themable_forms",
+                "reference": "8.x-1.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/themable_forms-8.x-1.0-beta1.zip",
+                "reference": "8.x-1.0-beta1",
+                "shasum": "6bf19b93a29ef3a2b220697c8e19eb789f8c1953"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1489481884",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "lauriii",
+                    "homepage": "https://www.drupal.org/user/1078742"
+                }
+            ],
+            "description": "Provides better theming experience for theming forms.",
+            "homepage": "https://www.drupal.org/project/themable_forms",
+            "support": {
+                "source": "http://cgit.drupalcode.org/themable_forms"
             }
         },
         {
@@ -6929,7 +6976,8 @@
     "stability-flags": {
         "drupal/field_permissions": 10,
         "drupal/eventbrite_attendees": 20,
-        "drupal/webform": 5
+        "drupal/webform": 5,
+        "drupal/themable_forms": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
