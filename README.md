@@ -1,43 +1,53 @@
-# Drupal project template for Platform.sh
+This project uses Platform.sh for hosting, Lando for local development, and Git for version control. The steps below will help you set up or connect with these tools.
 
-This project provides a starter kit for Drupal 8 projects hosted on [Platform.sh](http://platform.sh). It
-is very closely based on the [Drupal Composer project](https://github.com/drupal-composer/drupal-project).
+## Steps to set up local site initially:  
+1) Install the following on your computer: 
+    a) Composer (https://getcomposer.org/)
+    b) Lando (https://docs.devwithlando.io/installation/installing.html)
+    c) Docker Engine (see Lando’s requirements for Docker at https://docs.devwithlando.io/installation/system-requirements.html)
+    d) Platform CLI (A command line tool for interacting with the Platform.sh hosting service: https://docs.platform.sh/gettingstarted/cli.html)
+    e) Git
+2) NOTE: Do NOT do 'lando init' - a .lando.yml file is included
+3) platform project:list to get the [project-id]  
+4) platform environments -p [project-id] (to get then environments/branches)
+5) platform get [project-id] [folder-name] ---- (no brackets in the real command line code - 
+when you are prompted for environment, default is master. Otherwise type in environment).
+6) cd [folder-name]
+7) platform build (lots of “magic” happening/building here)
+8) lando start
+9) use url http://dcnj.lndo.site/ to go to the local site
+10) install Drupal8 on the site, either through the browser or with lando drupal site:install
+    a) Username: drupal8
+    b) Password: drupal8
+    c) Database name: drupal8
+    d) Host: database (default is localhost)
+11) git branch (Verify that you are not on the master branch, but instead on the branch you were assigned to work on. Do a git checkout to the branchname if you are not on the correct branch.)
+12) platform db:dump --gzip -f database.sql.gz (this will download the database from git Platform.sh for the environment associated to the git branch in #11 in a gz file)
+13) lando db-import database.sql.gz
+14) lando drush updb
+15) lando drush cr
+16) lando drush uublk 1 (unblocks user 1, which is blocked by default on the live site)
+17) lando drush uli 1 (gives a one time login link for user 1 on your local environment)
 
-## Starting a new project
+At this point, you should be able to log into your local environment with User 1 and test any changes you’d like to make. If not, and if you have an account on the live site, try to use your account credentials to log in. Note: if you are not an administrator on the real site, you might want to run: lando drush user-add-role administrator [your-user-name-here]
+Then, at least locally, you will be an administrator.
 
-To start a new Drupal 8 project on Platform.sh, you have 2 options:
+Enable Twig Debug:
+1) Copy web/sites/example.settings.local.php to web/sites/default/settings.local.php
+2) lando drush cr
 
-1. Create a new project through the Platform.sh user interface and select "start
-   new project from a template".  Then select Drupal 8 as the template. That will
-   create a new project using this repository as a starting point.
+Steps to update local:
+1) git pull (Note: may need to do ‘git clean -n’ then ‘git clean -f’ first)
+2) platform build
+3) platform db:dump --gzip -f database.sql.gz
+4) lando db-import database.sql.gz
+5) use url http://dcnj.lndo.site/ to go to the local site
+6) lando drush updb
+7) login with whatever login you used on the real drupalcampnj site
 
-2. Take an existing project, add the necessary Platform.sh files, and push it
-   to a Platform.sh Git repository. This template includes examples of how to
-   set up a Drupal 8 site.  (See the "differences" section below.)
+## To run PatternLab:
+Go to root of PatternLab theme: web/themes/patternlab/
+Follow instructions in README.md
 
-## Using as a reference
-
-You can also use this repository as a reference for your own Drupal projects, and borrow whatever code is needed.  The most important parts are the [`.platform.app.yaml`](/.platform.app.yaml) file and the [`.platform`](/.platform) directory.
-
-Also see:
-
-* [`settings.php`](/web/sites/default/settings.php) - The customized `settings.php` file works for both Platform.sh and local development, setting only those values that are needed in both.  You can add additional values as documented in `default.settings.php` as desired.
-* [`settings.platformsh.php`](/web/sites/default/settings.platformsh.php) - This file contains Platform.sh-specific code to map environment variables into Drupal configuration.  You can add to it as needed.  See [the documentation](https://docs.platform.sh/frameworks/drupal8.html) for more examples of common snippets to include here.
-* [`scripts/platformsh`](/scripts/platformsh) - This directory contains our update script to keep this repository in sync with the Drupal Composer project.  It may be safely ignored or removed.
-
-## Managing a Drupal site built with Composer
-
-Once the site is installed, there is no difference between a site hosted on Platform.sh
-and a site hosted anywhere else.  It's just Composer.  See the [Drupal documentation](https://www.drupal.org/node/2404989) for tips on how best to leverage Composer with Drupal 8.
-
-## How does this starter kit differ from vanilla Drupal from Drupal.org?
-
-1. The `vendor` directory (where non-Drupal code lives) and the `config` directory
-   (used for syncing configuration from development to production) are outside
-   the web root. This is a bit more secure as those files are now not web-accessible.
-
-2. The `settings.php` and `settings.platformsh.php` files are provided by
-   default. The `settings.platformsh.php` file automatically sets up the database connection on Platform.sh, and allows controlling Drupal configuration from environment variables.
-
-3. We include recommended `.platform.app.yaml` and `.platform` files that should suffice
-   for most use cases. You are free to tweak them as needed for your particular site.
+## PatternLab files to edit are here:
+web/themes/patternlab/source/_patterns
