@@ -43,11 +43,12 @@ Then, at least locally, you will be an administrator.
 ## Steps to update local:
 1. `git pull` (Note: may need to do `git clean -n` then `git clean -f` first)
 2. `platform build`
-3. `platform db:dump --gzip -f database.sql.gz`
-4. `lando db-import database.sql.gz`
-5. use url http://dcnj.lndo.site/ to go to the local site
-6. `lando drush updb`
-7. login with whatever login you used on the real drupalcampnj site
+3. `lando start`
+4. `platform db:dump --gzip -f database.sql.gz`
+5. `lando db-import database.sql.gz`
+6. use url http://dcnj.lndo.site/ to go to the local site
+7. `lando drush updb`
+8. login with whatever login you used on the real drupalcampnj site
 
 ## To run PatternLab:
 Go to root of PatternLab theme: web/themes/patternlab/  
