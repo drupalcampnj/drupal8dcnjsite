@@ -44,7 +44,7 @@ build:
 hooks:
     build: |
       cd web/themes/patternlab
-      npm install
+      yarn install
       npm run setup
       npm run compile
     # The deploy hook runs after your application has been deployed and started.
